@@ -137,6 +137,8 @@ grid.raster(readPNG("figures/6.jpg"))
 	* parameters documented in “`?par`"
 	* ***Note**: it is some times necessary to convert column/variable to factor to make plotting easier *
 		* `airquality <- transform(airquality, Month = factor(month))`
+		with(airquality, plot(Wind, Ozone, col = Month, pch = 20, type = "p", xlab = "wind", ylab = "Ozone"))
+
 
 ### Base Graphics Functions and Parameters
 * **arguments**
